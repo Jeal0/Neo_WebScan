@@ -12,3 +12,10 @@ Demande : erreur à la compilation du programme
 Gardé   : ok(), permettant de validé le bon fonctionnement du programme
 Corrigé : ajout de la fonction ok() au programme
 Commit  : "première requête sur une URL" [IA]
+
+## 10/11 - claude - detection une faille xss
+
+Demande : comment ajouter au code la detection une faille xss en Rust
+Gardé : format! - Ok(reponse) - let contenu = reponse.text()?; - if contenu.contains(payload)
+corrigé : Ok(reponse) au lieu de reponse seul 
+commit : "ajout de scan de vulnérabilités de bases : https, headers, chemins d'accès et une faille xss"
