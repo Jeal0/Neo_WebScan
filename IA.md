@@ -19,3 +19,10 @@ Demande : comment ajouter au code la detection une faille xss en Rust
 Gardé : format! - Ok(reponse) - let contenu = reponse.text()?; - if contenu.contains(payload)
 corrigé : Ok(reponse) au lieu de reponse seul 
 commit : "ajout de scan de vulnérabilités de bases : https, headers, chemins d'accès et une faille xss"
+
+## 13/11 - claude - Changement de page sur le site web
+
+Demande : Y a t il une méthodologie simple en Rust pour pouvoir parcourir les pages d'un site web grâce à la dépendance Reqwest ?
+Gardé : utilisation de pop(), match, Err(), split(), skip() et unwrap
+corrigé : utilisation des méthode apprise par claude et je l'ai intégré dans mon code
+commit : "Modification du proramme pour automatiser le parcours des pages d'un site web et ensuite répéter le processus de recherche de failles [IA]"
